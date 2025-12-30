@@ -34,8 +34,10 @@ const SkillBar = ({ skill, index, isVisible }) => {
     if (isVisible) {
       const timer = setTimeout(() => {
         setProgress(skill.level);
-      }, index * 100);
+      }, index * 150); // Increased delay for mobile
       return () => clearTimeout(timer);
+    } else {
+      setProgress(0); // Reset progress when not visible
     }
   }, [isVisible, skill.level, index]);
 
@@ -43,16 +45,20 @@ const SkillBar = ({ skill, index, isVisible }) => {
     <div className="mb-6 group">
       <div className="flex justify-between items-center mb-2">
         <div className="flex items-center space-x-2">
-          <span className="text-2xl">{skill.icon}</span>
-          <span className="font-medium text-white">{skill.name}</span>
+          <span className="text-xl sm:text-2xl">{skill.icon}</span>
+          <span className="font-medium text-white text-sm sm:text-base">{skill.name}</span>
         </div>
-        <span className="text-accent-400 font-semibold">{progress}%</span>
+        <span className="text-accent-400 font-semibold text-sm sm:text-base">{progress}%</span>
       </div>
       
-      <div className="h-3 bg-gray-800 rounded-full overflow-hidden shadow-inner">
+      <div className="h-2 sm:h-3 bg-gray-800 rounded-full overflow-hidden shadow-inner">
         <div 
-          className="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full transition-all duration-1000 ease-out shadow-lg"
-          style={{ width: `${progress}%` }}
+          className="h-full bg-gradient-to-r from-primary-500 to-accent-500 rounded-full transition-all duration-1500 ease-out shadow-lg transform"
+          style={{ 
+            width: `${progress}%`,
+            transform: isVisible ? 'scaleX(1)' : 'scaleX(0)',
+            transformOrigin: 'left'
+          }}
         >
           <div className="h-full bg-gradient-to-r from-white/20 to-transparent rounded-full"></div>
         </div>
@@ -63,12 +69,12 @@ const SkillBar = ({ skill, index, isVisible }) => {
 
 const SkillCategory = ({ title, skills, icon, isVisible }) => (
   <div className="glass-card">
-    <div className="text-center mb-8">
-      <div className="text-4xl mb-3">{icon}</div>
-      <h3 className="text-xl font-bold text-white">{title}</h3>
+    <div className="text-center mb-6 sm:mb-8">
+      <div className="text-3xl sm:text-4xl mb-3">{icon}</div>
+      <h3 className="text-lg sm:text-xl font-bold text-white">{title}</h3>
     </div>
     
-    <div className="space-y-4">
+    <div className="space-y-3 sm:space-y-4">
       {skills.map((skill, index) => (
         <SkillBar 
           key={skill.name} 
@@ -90,9 +96,15 @@ const Skills = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
+        } else {
+          // Reset visibility when section leaves viewport
+          setIsVisible(false);
         }
       },
-      { threshold: 0.3 }
+      { 
+        threshold: 0.2, // Reduced threshold for mobile
+        rootMargin: '0px 0px -50px 0px' // Trigger earlier on mobile
+      }
     );
 
     if (sectionRef.current) {
