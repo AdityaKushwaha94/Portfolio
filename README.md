@@ -1,6 +1,6 @@
 # Portfolio Website
 
-A modern, responsive portfolio website built with React.js and Node.js/Express.js.
+My personal portfolio website built with React.js and Node.js/Express.js.
 
 ## 🚀 Project Structure
 
