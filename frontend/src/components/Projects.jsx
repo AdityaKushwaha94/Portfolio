@@ -10,7 +10,7 @@ const projectsData = [
     technologies: ["Node.js", "Express", "MongoDB", "JWT", "Nodemailer", "Redis"],
     image: "/api/placeholder/600/400",
     liveUrl: "#",
-    githubUrl: "https://github.com/adityakushwaha",
+    githubUrl: "https://github.com/AdityaKushwaha94",
     features: ["Blacklist Management", "Rate Limiting", "Secure Authentication", "Email Validation", "Logging System"],
     status: "Hosting Coming Soon",
     duration: "2 months",
@@ -25,7 +25,7 @@ const projectsData = [
     technologies: ["React.js", "Node.js", "Express", "MongoDB", "Stripe", "JWT", "Tailwind CSS"],
     image: "/api/placeholder/600/400",
     liveUrl: "#",
-    githubUrl: "https://github.com/adityakushwaha",
+    githubUrl: "https://github.com/AdityaKushwaha94",
     features: ["User Authentication", "Payment Integration", "Admin Dashboard", "Order Tracking", "Inventory Management"],
     status: "Not Hosted",
     duration: "3 months",
@@ -40,7 +40,7 @@ const projectsData = [
     technologies: ["Python", "TensorFlow", "OpenCV", "Keras", "NumPy", "Scikit-learn"],
     image: "/api/placeholder/600/400",
     liveUrl: "#",
-    githubUrl: "https://github.com/adityakushwaha",
+    githubUrl: "https://github.com/AdityaKushwaha94",
     features: ["Image Analysis", "Deep Learning", "High Accuracy Detection", "Medical Imaging", "CNN Architecture"],
     status: "Patent Pending",
     duration: "1 year",
@@ -55,7 +55,7 @@ const projectsData = [
     technologies: ["Python", "OpenCV", "Dlib", "NumPy", "MediaPipe"],
     image: "/api/placeholder/600/400",
     liveUrl: "https://reaction-analyser-demo.vercel.app",
-    githubUrl: "https://github.com/adityakushwaha",
+    githubUrl: "https://github.com/AdityaKushwaha94/Reaction-analyzer",
     features: ["Real-time Processing", "Emotion Detection", "Facial Recognition", "Expression Analysis", "Video Processing"],
     status: "Completed",
     duration: "2 months",
@@ -85,7 +85,7 @@ const projectsData = [
     technologies: ["Node.js", "Express", "Socket.io", "MongoDB", "React.js", "JWT"],
     image: "/api/placeholder/600/400",
     liveUrl: "#",
-    githubUrl: "https://github.com/adityakushwaha",
+    githubUrl: "https://github.com/AdityaKushwaha94",
     features: ["Real-time Messaging", "REST API", "WebSocket", "User Authentication", "Chat Rooms"],
     status: "Coming Soon",
     duration: "2 months",
@@ -312,7 +312,7 @@ const Projects = () => {
           <p className="text-green-500 text-lg font-medium">
             You can see more projects on my{" "}
             <a
-              href="https://github.com/AdityaKushwaha94"
+              href="https://github.com/AdityaKushwaha9494"
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:text-green-400 transition-colors"
@@ -340,7 +340,7 @@ const Projects = () => {
                 Start a Project
               </button>
               <a
-                href="https://github.com/AdityaKushwaha94"
+                href="https://github.com/AdityaKushwaha9494"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary"
