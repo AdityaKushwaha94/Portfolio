@@ -9,12 +9,12 @@ const projectsData = [
     longDescription: "Built with Node.js and Express, implementing secure authentication with blacklist functionality. Features include rate limiting, IP blocking, email validation, and comprehensive logging system. Currently optimizing for production deployment.",
     technologies: ["Node.js", "Express", "MongoDB", "JWT", "Nodemailer", "Redis"],
     image: "/api/placeholder/600/400",
-    liveUrl: "#https://email-senderaditya.vercel.app/",
+    liveUrl: "https://email-senderaditya.vercel.app/",
     githubUrl: "https://github.com/AdityaKushwaha94/Email-Sender-",
     features: ["Blacklist Management", "Rate Limiting", "Secure Authentication", "Email Validation", "Logging System"],
     status: "Hosting Coming Soon",
     duration: "2 months",
-    hasLiveDemo: false
+    hasLiveDemo: true
   },
   {
     id: 2,
