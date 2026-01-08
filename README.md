@@ -1,23 +1,6 @@
 # Portfolio Website
 
-My personal portfolio website built with React.js and Node.js/Express.js.
-
-## 🚀 Project Structure
-
-```
-Portfolio/
-├── frontend/          # React.js frontend application
-│   ├── src/
-│   │   ├── components/
-│   │   └── assets/
-│   └── package.json
-├── backend/           # Node.js/Express.js backend
-│   ├── models/
-│   ├── routes/
-│   ├── config/
-│   └── package.json
-└── README.md
-```
+My personal portfolio website built with React.js,mongodb and Node.js/Express.js.
 
 ## 📦 Installation & Local Development
 
