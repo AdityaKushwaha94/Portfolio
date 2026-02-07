@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Links from "./components/Links";
+import InstallPWA from "./components/InstallPWA";
 
 function App() {
   // Scroll animation observer
@@ -47,6 +48,9 @@ function App() {
       </main>
       
       <Links />
+      
+      {/* PWA Install Prompt */}
+      <InstallPWA />
       
       {/* Floating scroll indicator */}
       <div className="fixed right-8 top-1/2 transform -translate-y-1/2 hidden lg:block">

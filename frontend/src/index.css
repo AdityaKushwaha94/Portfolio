@@ -126,3 +126,19 @@
     backdrop-filter: blur(2px);
   }
 }
+
+/* PWA Install Banner Animation */
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 20px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.4s ease-out;
+}
